@@ -1,0 +1,194 @@
+import java.util.Arrays;
+
+public class PodstawyJava {
+
+    public static void main(String[] args) {
+
+        // ========================
+        // 1. WYPISYWANIE TEKSTU
+        // ========================
+
+        System.out.println("Hello world");
+        System.out.print("Uczę się ");
+        System.out.print("Javy\n");
+
+        String imie = "Adam";
+        int wiek = 20;
+
+        // printf – formatowane wypisywanie
+        System.out.printf("Mam na imię %s i mam %d lat\n", imie, wiek);
+
+        /*
+        ĆWICZENIE 1
+        Wypisz tekst trzema sposobami:
+        - println
+        - print
+        - printf
+
+        Tekst:
+        "Java jest"
+        */
+
+
+        // ========================
+        // 2. ZMIENNE
+        // ========================
+
+        int liczba = 10;
+        double cena = 19.99;
+        char litera = 'A';
+        boolean aktywny = true;
+        String miasto = "Łódź";
+
+        System.out.println(liczba);
+        System.out.println(cena);
+        System.out.println(litera);
+        System.out.println(aktywny);
+        System.out.println(miasto);
+
+        /*
+        ĆWICZENIE 2
+        Utwórz zmienne:
+        - imie
+        - wiek
+        - wzrost
+
+        Wypisz je w jednym zdaniu.
+        */
+
+
+        // ========================
+        // 3. OPERACJE MATEMATYCZNE
+        // ========================
+
+        int a = 12;
+        int b = 4;
+
+        System.out.println("Suma = " + (a + b));
+        System.out.println("Różnica = " + (a - b));
+        System.out.println("Iloczyn = " + (a * b));
+        System.out.println("Iloraz = " + (a / b));
+
+        /*
+        ĆWICZENIE 3
+        Utwórz dwie liczby i wypisz:
+        - dodawanie
+        - odejmowanie
+        - mnożenie
+        - dzielenie
+        */
+
+
+        // ========================
+        // 4. IF / ELSE
+        // ========================
+
+        int liczbaTest = -5;
+
+        if (liczbaTest > 0) {
+            System.out.println("Dodatnia");
+        } else if (liczbaTest < 0) {
+            System.out.println("Ujemna");
+        } else {
+            System.out.println("Zero");
+        }
+
+        /*
+        ĆWICZENIE 4
+        Utwórz zmienną "wiek".
+
+        Jeśli wiek >= 18
+        wypisz "Pełnoletni"
+
+        w przeciwnym razie
+        wypisz "Niepełnoletni"
+        */
+
+
+        // ========================
+        // 5. PĘTLA FOR
+        // ========================
+
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+
+        /*
+        ĆWICZENIE 5
+        Wypisz liczby od 1 do 10 używając pętli for.
+        */
+
+
+        // ========================
+        // 6. PĘTLA WHILE
+        // ========================
+
+        int i = 1;
+
+        while (i <= 5) {
+            System.out.println(i);
+            i++;
+        }
+
+        /*
+        ĆWICZENIE 6
+        Wypisz liczby od 10 do 1 używając pętli while.
+        */
+
+
+        // ========================
+        // 7. TABLICE
+        // ========================
+
+        int[] liczby = {10, 20, 30, 40, 50};
+
+        // --- SPOSÓB 1: klasyczna pętla for
+
+        for (int j = 0; j < liczby.length; j++) {
+            System.out.println(liczby[j]);
+        }
+
+        // --- SPOSÓB 2: pętla foreach
+
+        for (int element : liczby) {
+            System.out.println(element);
+        }
+
+
+        // ========================
+        // 8. PROSTA PRACA Z TABLICĄ
+        // ========================
+
+        int[] liczby2 = {3, 7, 2, 9, 5};
+
+        int suma = 0;
+
+        for (int element : liczby2) {
+            suma += element;
+        }
+
+        System.out.println("Suma = " + suma);
+
+        /*
+        ĆWICZENIE 8
+        Znajdź największą liczbę w tablicy.
+        */
+
+
+        // ========================
+        // 9. LOSOWANIE LICZBY
+        // ========================
+
+        int losowa = (int) (Math.random() * 10);
+
+        System.out.println("Losowa liczba: " + losowa);
+
+        /*
+        ĆWICZENIE 9
+        Wylosuj liczbę od 1 do 100 i sprawdź:
+        - czy jest parzysta
+        - czy jest nieparzysta
+        */
+
+    }
+}
